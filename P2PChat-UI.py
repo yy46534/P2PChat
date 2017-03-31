@@ -101,8 +101,6 @@ def create_forwardlink():
 def keepalive():
 	global MSID
 	global chatroom_list
-	#Run the function every 20 seconds
-	threading.Timer(20.0, keepalive).start()
 
 	#Send Join message
 	msg = "J:"+roomname+":"+username+":"+local_IP+":"+local_port+"::\r\n"
